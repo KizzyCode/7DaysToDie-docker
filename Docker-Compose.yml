@@ -9,7 +9,8 @@ services:
       context: ./
       dockerfile: Dockerfile
     ports:
-      - "26900:26900/udp"
+      - "26900:26900/tcp"
+      - "26900-26903:26900-26903/udp"
     volumes:
       - appcache:/home/7daystodie/app
       - ./mount:/home/7daystodie/data
