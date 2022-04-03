@@ -1,0 +1,15 @@
+version: "3.9"
+
+volumes:
+  appcache:
+
+services:
+  7daystodie:
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    ports:
+      - "26900:26900/udp"
+    volumes:
+      - appcache:/home/7daystodie/app
+      - ./mount:/home/7daystodie/data
