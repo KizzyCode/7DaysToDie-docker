@@ -14,13 +14,7 @@ fi
     +app_update 294420 \
     +quit
 
-# FIXME
-# while true; do
-#     sleep 1
-# done
-
 # Execute server
-#export LD_LIBRARY_PATH="$HOME/app:$HOME/app/7DaysToDieServer_Data/Plugins:$HOME/app/7DaysToDieServer_Data/Plugins/x86_64"
 exec "$HOME/app/7DaysToDieServer.x86_64" \
     -configfile="$HOME/data/serverconfig.xml" \
     -quit -batchmode -nographics -dedicated
