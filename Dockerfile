@@ -6,7 +6,7 @@ RUN echo steamcmd steam/license note "" | debconf-set-selections \
 	&& dpkg --add-architecture i386 \
  	&& apt-get update \
 	&& apt-get upgrade --yes \
- 	&& apt-get install --yes ca-certificates steamcmd
+ 	&& apt-get install --yes ca-certificates steamcmd telnet
  
 # Create and become user
 RUN groupadd --gid 1000 7daystodie \
