@@ -15,7 +15,7 @@ fi
     +quit
 
 # Execute server
-export LD_LIBRARY_PATH="$HOME/app"
+export LD_LIBRARY_PATH="$HOME/app:$HOME/app/7DaysToDieServer_Data/Plugins"
 exec "$HOME/app/7DaysToDieServer.x86_64" \
     -configfile="$HOME/data/serverconfig.xml" \
     -quit -batchmode -nographics -dedicated
